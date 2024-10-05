@@ -17,7 +17,7 @@ class ProductosM extends ConexionBD{
 		/*ahora vamos a enlazar parametros con bindParam, que vincula una variable php a un parametro de sustitucion que corresponde a la sentencia sql y que es usada, preparada para la sentencia indicamos que este pdo es un parametro string*/
 
 		$pdo->bindParam(":nombre", $datosC["nombre"], PDO::PARAM_STR);
-		$pdo->bindParam(":cantidad", $datosC["cantidad"], PDO::PARAM_STR);
+		$pdo->bindParam(":cantidad", $datosC["cantidad"], PDO::PARAM_INT);
 		$pdo->bindParam(":genero", $datosC["genero"], PDO::PARAM_STR);
 
 		//hacemos que se ejecute la variable pdo, pero con una condicion
@@ -44,7 +44,7 @@ class ProductosM extends ConexionBD{
 
    	$pdo->execute();
 
-   	//devolvemos una fila o todas las que hallan
+   	//devolvemos una fila o todas las que hayan
 
    	return $pdo->fetchAll();
 
@@ -81,7 +81,7 @@ class ProductosM extends ConexionBD{
 		//vinculamos el parametro id en lo que venga $datosC[id]
 		$pdo->bindParam(":id", $datosC["id"], PDO::PARAM_INT);
 		$pdo->bindParam(":nombre", $datosC["nombre"], PDO::PARAM_STR);
-		$pdo->bindParam(":cantidad", $datosC["cantidad"], PDO::PARAM_STR);
+		$pdo->bindParam(":cantidad", $datosC["cantidad"], PDO::PARAM_INT);
 		$pdo->bindParam(":genero", $datosC["genero"], PDO::PARAM_STR);
 		//hacemos que se ejecute la variable pdo, pero con una condicion
 		if($pdo->execute()){

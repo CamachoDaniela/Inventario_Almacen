@@ -3,7 +3,7 @@
 class ProductosC{
 
 
-	//Registrar los empleados
+	//Registrar los productos
 
 	public function RegistrarProductosC(){
 
@@ -74,7 +74,7 @@ class ProductosC{
 
 				<input type="text" placeholder="Nombre" value="'.$respuesta["nombre"].'" name="nombreE" required>
 
-				<input type="text" placeholder="Cantidad" value="'.$respuesta["cantidad"].'" name="cantidadE" required>
+				<input type="number" placeholder="Cantidad" value="'.$respuesta["cantidad"].'" name="cantidadE" required>
 
 				<input type="text" placeholder="Genero" value="'.$respuesta["genero"].'" name="generoE" required>
 
@@ -83,7 +83,7 @@ class ProductosC{
 	}
 
 
-	//Actualizar empleado
+	//Actualizar producto
 
 	public function ActualizarProductoC(){
 		//si la variable post viene con informacion en nombreE entonces se edita
@@ -95,7 +95,7 @@ class ProductosC{
 			$tablaBD = "productos";
 			//le solicitamos una respuesta al modelo
 			$respuesta = ProductosM::ActualizarProductoM($datosC, $tablaBD);
-			//Creamos una condicion, si se actualiza en la bd nos dirige a empleados
+			//Creamos una condicion, si se actualiza en la bd nos dirige a productos
 			if($respuesta == "Bien"){
 
 				header("location:index.php?ruta=productos");
@@ -110,7 +110,7 @@ class ProductosC{
 	}
 
 
-	//Eliminar empleado
+	//Eliminar producto
 	
 
 	public function BorrarProductoC(){
@@ -118,7 +118,7 @@ class ProductosC{
 		if(isset($_GET["idB"])){
 			//que la variable $datosC sea igual a la variable get
 			$datosC = $_GET["idB"];
-			//que la variable $tablaBD sea igual a la tabla empleado
+			//que la variable $tablaBD sea igual a la tabla producto
 			$tablaBD = "productos";
 			//con la funcion que vamos a crear en el modelo
 			$respuesta = ProductosM::BorrarProductoM($datosC,$tablaBD);

@@ -16,7 +16,7 @@ if(!$_SESSION["Ingreso"]){
 		
 		<input type="text" placeholder="Nombre" name="nombreR" required>
 
-		<input type="text" placeholder="Cantidad" name="cantidadR" required>
+		<input type="number" placeholder="Cantidad" name="cantidadR" required>
 
 		<input type="text" placeholder="Genero" name="generoR" required>
 

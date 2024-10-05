@@ -1,6 +1,6 @@
 <?php
 //tenemos que requerir una sola vez los archivos del controlador del modelo para que todo se conecte con el index
-//en la base de datos a las columnas id les coloco int y a las de string tipo text
+//en la base de datos a las columnas id y cantidad les coloco int y a las de string tipo text
 require_once "Controladores/rutasC.php";
 require_once "Controladores/usuarioC.php";
 require_once "Controladores/productosC.php";
