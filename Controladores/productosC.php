@@ -30,7 +30,7 @@ class ProductosC{
 		}
 	}
 
-	//Mostrar los empleados
+	//Mostrar los productos
 	
 
 	public function MostrarProductosC(){

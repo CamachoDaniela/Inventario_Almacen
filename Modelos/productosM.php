@@ -4,7 +4,7 @@ require_once "conexionBD.php";
 
 class ProductosM extends ConexionBD{
 
-	//Registrar empleados
+	//Registrar productos
 
 	static public function RegistrarProductosM($datosC, $tablaBD){
 
@@ -36,7 +36,7 @@ class ProductosM extends ConexionBD{
 
 
 
-	//Mostrar empleados
+	//Mostrar productos
 	
 	static public function MostrarProductosM($tablaBD){
    //pedimos la sentencia
@@ -72,7 +72,7 @@ class ProductosM extends ConexionBD{
 	}
 
 
-	//Actualizar empleado
+	//Actualizar producto
 	
 	static public function ActualizarProductoM($datosC, $tablaBD){
 		//hacemos conexion con la bd y con prepare pasamos la sentencia sql
@@ -97,7 +97,7 @@ class ProductosM extends ConexionBD{
 
 	}
 
-	//borrar empleado
+	//borrar producto
 	
 	static public function BorrarProductoM($datosC,$tablaBD){
         //la variable pdo igual a la clase ConexionBD, llamamos la funcion cBD

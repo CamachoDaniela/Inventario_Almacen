@@ -30,7 +30,7 @@ if(!$_SESSION["Ingreso"]){
 		</thead>
 
 		<tbody>
-			<!--lo colocamos en el controlador de empleados-->
+			<!--lo colocamos en el controlador de -->
 			
 			<?php
 
