@@ -10,6 +10,9 @@ siguiendo el patrón de diseño MVC (Modelo-vista-controlador)
 ## Requisitos
 1. Xampp
 
+## Diagrama de clases
+![diagrama de clases](https://github.com/user-attachments/assets/31e08f1c-d582-4b62-9214-86ea54641976)
+
 ## Código de la aplicación
 
 El archivo `index.php` requiere una sola vez los archivos del controlador de los modelos para que todo quede conectado con el index
